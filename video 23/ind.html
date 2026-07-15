@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> display inline element</title>
+    <style>
+        
+        .inline-demo {
+            display: inline;
+            background-color: gray;
+            color: red;
+        }
+
+        .block-demo {
+            display: block;
+            background-color: aqua;
+            color: black;
+        }
+
+        .box {
+            display: inline-block;
+            box-sizing: border-box;
+            border-style: solid;
+            background-color: aqua;
+            padding: 2px;
+            margin: 2px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a inline element </h1>
+    <p>This is a paragraph with an <span class="inline-demo">inline element</span> inside. I'm learning.</p>
+
+    <h2>This is a block element:</h2>
+    <p>This is a paragraph before the block element.</p>
+    <div class="block-demo">And this is our block.</div>
+    <p>There is no need to create another paragraph.</p>
+
+    <h3>This is an inline-block element</h3>
+    <div class="box">This is </div>
+    <div class="box">inline element</div>
+    <span>Inside.This is me.</span>
+
+</body>
+
+</html>
