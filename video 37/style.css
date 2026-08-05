@@ -1,0 +1,29 @@
+.wrap {
+  margin: 30px auto;
+  max-width: 1000px;
+  width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: sans-serif   
+}
+box {
+  width: calc(20%);
+  margin: 20px 20px;
+  align-items: center;
+  text-align: center;
+  background: #ddd;
+  cursor: pointer;
+  color: #1a2764;
+  border: 2px solid #1a2764;
+  text-align: center;
+  line-height: 130px;
+}
+.blue{
+  background-color: #1a2764;
+}
+.translateX{
+  transform: translateX(2em);
+
+
+}

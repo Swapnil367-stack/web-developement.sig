@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10%;
+        }
+        .container {
+            background-color: rgba(5, 199, 144, 0.372);
+            height: 80vh;
+            width: 80vw;
+
+        }
+
+        .box {
+            background-color: none;
+            height: 40px;
+            width: 35px;
+            animation-name: codewithharry;
+            /* animation-duration: 3s;
+            /* animation-timing-function:steps(5);
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;*/
+            animation: codewithharry 3s ease-in-out 1s infinite,
+                code2 3s ease-in-out 1s infinite;
+
+
+        }
+
+        @keyframes codewithharry {
+            from {
+                background-color: greenyellow;
+            }
+
+            to {
+                background-color: red;
+               
+            }
+         }
+         @keyframes code2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(200deg);
+            }
+            60%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+
+    </div>
+
+</body>
+
+</html>
