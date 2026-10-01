@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 90vw;
+            background-color: blue;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            margin: 10px;
+            padding: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+    
+     
+            border-radius: 70px;
+            animation: animateX 3s linear infinite, animateY 3s ease-out infinite;
+            
+
+
+        
+        }
+        @keyframes animateX {
+            from{
+              left: 0;
+
+
+            }
+           to{
+            left: 100%;
+           
+           }
+        }
+        @keyframes animateY{
+            from{
+             bottom: 0;
+
+            }
+            to{
+              bottom: 100%;
+            
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+
+    </div>
+    
+</body>
+</html>
