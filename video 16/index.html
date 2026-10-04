@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectrs </title>
+    <style>
+        div{
+            /* background-color: red; */
+        }
+        /* CLASS SELECTOR */
+    .red{
+        background-color: purple; 
+    }
+    .purpal{
+        background-color: blue;
+    }
+    /* ID SELECTOR */
+
+    #yellow{
+        background-color: yellowgreen;
+        color: red;
+    }
+
+    /* child selector */
+    div > p{
+        background-color: navajowhite;
+        color: black;
+    }
+
+    /* Desendent selector*/
+    div p{
+        background-color: beige;
+    }
+
+    /* universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*pseudo selector */
+    a:visited{
+        color: yellow;
+    }
+
+    a:link{
+        color: yellowgreen;
+    }
+    a:active{
+        background-color: yellowgreen;
+    }
+    a:hover{
+        background-color: green;
+    }
+    
+    p:first-child{
+        background-color: brown;
+    }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>this is first.</p>
+        <p>this is second.</p>
+
+    </main>
+    <div class="red">
+        I am a div.
+    </div>
+    <div class="purpal">
+        My name is swapnil.
+
+    </div>
+
+    <div id="yellow">
+        hii ! my name si swapnil.Nice to meet you everyone.
+        
+        <article>
+
+        <p>I am a child selector in the under div written by swapnil</p>
+
+        </article>
+    </div>
+
+    <a href="https://www.google.com "> Going to google</a>
+
+
+
+    
+
+    
+</body>
+</html>

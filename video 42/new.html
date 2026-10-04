@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternerry statements</title>
+
+</head>
+<body>
+    <h1>Ternerry statement in js</h1>
+    <p id="demo"></p>
+    
+    <script>
+        let prise = 10
+        let ismember = false
+        let discount = ismember ? 0.3 : 0
+        let finalprise = 10 - (prise * discount)
+
+        document.getElementById("demo").innerHTML = "the price is " + finalprise
+
+    </script>
+
+</body>
+</html>

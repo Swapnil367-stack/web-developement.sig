@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> else if condition loop</h1>
+    <p id="demo"></p>
+    <script>
+        const time = new Date().getHours();
+        let greating;
+        if(time < 10 ){
+            greating ="good morning"
+        }
+        else if(time < 20){
+            greating ="good day!"
+            
+        }
+        else{
+            greating ="good evening"
+        }
+        document.getElementById("demo").innerHTML = greating
+    </script>
+    </body>
+</html>

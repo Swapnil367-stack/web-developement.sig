@@ -4,71 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS variable</title>
+    <title>csss variable</title>
     <style>
-        :root {
-            --background-color: lightblue;
-            --main-color: blue;
-            --padding: 4px;
-            --margin: 5px;
-
-
-        }
-
         body {
-            background-color: var(--background-color);
+            background-color: rgb(187, 218, 232);
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 40px;
 
         }
-
-        h1 {
-            color: black;
-            background-color: white;
-            border-radius: 10px;
-            padding: var(--padding);
-            margin: var(--margin)
-        }
-
-        p {
-            color: green;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        h1{
+            background-color: rgb(170, 189, 228);
+            border-radius: 15px;
             padding: 10px;
-            font-size: 13px;
-            overflow: scroll;
-            overflow: nowrap;
-
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            
 
         }
+        h2{
+            
+             background-color: rgb(170, 189, 228);
+            border-radius: 15px;
+            padding: 10px;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            
+        }
+    
+        
+        
 
-        h2 {
-            color: black;
-            background-color: white;
-            border-radius: 10px;
-            padding: var(--padding);
-            margin: var(--margin)
+        .box {
+           background-color: rgb(146, 198, 174);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
-        @media screen and (max-width:600px) {
-            p {
-                background-color: rgb(160, 198, 160);
-
+        @media screen and (max-width: 600px) {
+            .box {
+                background-color: rgb(169, 63, 10);
+                
             }
         }
     </style>
+
+
 </head>
 
 <body>
+    <div class="box">
+        <h1> learn about media query</h1>
 
-    <h1>This is css variable</h1>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus amet hic tempora illo, aliquam
-        enim ipsam quibusdam nisi? Et similique eius aperiam, quasi natus eum sequi at harum repellendus nam cumque
-        dolorem libero tempore corrupti doloremque repellat fugit. Dolorum facere dolore assumenda sapiente quasi.
-    </p>
-    <h2>Another css veriable</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas neque reprehenderit accusantium deserunt.
-        Veniam, rem, esse hic corporis et rerum magni vel laboriosam deserunt, veritatis quaerat libero quis illo nihil
-        eos eveniet quasi?
-    </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aut consequuntur incidunt neque, quas ipsam
+            iusto eligendi optio nesciunt officiis tempore hic debitis possimus ex odit at exercitationem aperiam iste.
+            Corporis rem earum soluta est nulla ab blanditiis quibusdam expedita error! Qui inventore nesciunt culpa?
+        </p>
+
+        <h2>  This is 2nd media query </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto dignissimos recusandae vel iste nam
+            temporibus perferendis totam debitis, quisquam deleniti illo distinctio doloribus, quos velit maiores.
+            Suscipit eos quis enim. Quo, mollitia. Ducimus incidunt assumenda dolor voluptatem ipsa reiciendis.
+        </p>
+    </div>
+
 
 
 </body>

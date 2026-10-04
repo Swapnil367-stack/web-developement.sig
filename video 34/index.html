@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex box</title>
+    <title>css transforrms</title>
     <style>
-        .flex-container{
-            display: flex;
-            background-color:rgb(131, 131, 205) ;
-            flex-direction: row;
-
-        }
-        .flex-container div{
-            background-color: aqua;
-            margin: 10px;
-            padding: 15px;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
+        .box {
+            margin: 0px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(168, 174, 235);
+            background-color: rgb(168, 204, 237);
+            box-shadow: ;
+            /* transform: rotate(-40deg);*/
+            /*transform: rotate(0.2turn);*/
+            /*transform: rotateY(20deg);*/
+            /*transform: scale3d();*/
+            /* transform: skew(10deg);*/
+            /* transform: translate(20%) skew(10deg) rotateY(10deg);*/
+
+            /*transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(.76, .44, 1, 1.02);
+            transition-delay: 1s;
+*/
+           /* transition-property: transform 2s ease 2s,
+            background 3s linear, scale 2s ease;*/
+            transform-origin: 199px;
+
+
+
+        }
+
+        .box:hover {
+            width: 400px;*/
+            transform: rotate(120deg);
+    }
+
+        .container {
+            height: 90vh;
+            width: 90 vw;
+            border: 2px solid black;
+        }
     </style>
 </head>
+
 <body>
-    <h2>flex box-container direction</h2>
-   <div class="flex-container">
-        <div>one </div>
-        <div> two</div>
-        <div>Three</div>
-    </div>   
-    
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex wrap container'</title>
-    <style>
-        .flex-container{
-            background-color:pink ;
-            display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-        }
-        .flex-container div{
-           
-            background-color: aqua;
-            margin: 5px;
-            padding: 10px;
-        }
-
-
-    </style>
-</head>
-<body>
-    <h3>Flex wrap container</h3>
-    <div class="flex-container">
-        <div>one</div><div>two</div><div>Three</div>
-        <div>four</div><div>five </div>
+    <h1>These is transform </h1>
+    <div class="container">
+        <div class="box">
+            🐵🐦‍🔥
+        </div>
     </div>
-    
 </body>
+
 </html>
