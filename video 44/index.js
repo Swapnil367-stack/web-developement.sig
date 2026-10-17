@@ -22,3 +22,4 @@ function myfunction(){
     let text = "inside: " + typeof carname + carname +" ";
     console.log(text);
 }
+

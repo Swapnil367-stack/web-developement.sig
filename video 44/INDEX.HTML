@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FUNCTION </title>
-    
-
-    <script type="module" src="new.js"></script>
+    <script language="javascript">
+        let name = " "
+        function hello() {
+            name = prompt('enter Your name: ', 'name')
+            alert('greetings ' + name + ' , welcome to my page!')
+        }
+        function goodbye(){
+            alert('goodbye' + name +'sorry to see you goo!')
+        }
+    </script>
 </head>
-<body>
-    
-</body>
-</html>
 
+<body onload="hello();" onunload="goodbye();">
+    
+
+</body>
+
+</html>
